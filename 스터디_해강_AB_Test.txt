@@ -1,0 +1,6 @@
+df.groupby('version').agg({"sum_gamerounds": ["count", "mean"]}).reset_index() 
+#index를 바꿔주는 index 없애려면 reset_index(drop=True) 
+#up_limit 값 위는 다 up_limit 값으로 치환, .describe() 통계 값 보여줌
+
+정규성 검정 shapiro([df["변수"] == "값"])[1], p-value = pthres
+분포 유사성 levene
